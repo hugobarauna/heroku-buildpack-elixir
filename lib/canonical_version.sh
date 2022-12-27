@@ -1,6 +1,8 @@
 #!/usr/bin/env bash
 
 erlang_builds_url() {
+  output_section "STACK ENV VAR: ${STACK}"
+
   case "${STACK}" in
     "heroku-20")
       erlang_builds_url="https://repo.hex.pm/builds/otp/ubuntu-20.04"
